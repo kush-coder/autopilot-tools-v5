@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig",
+  "include": ["src", ".kktrc.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "strict": false,
+    "jsx": "react-jsx"
+  }
+}

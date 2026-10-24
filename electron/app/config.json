@@ -1,0 +1,35 @@
+{
+  "productName": "Web Tools",
+  "appId": "com.wangchujiang.tools",
+  "asar": true,
+  "directories": {
+    "output": "dist"
+  },
+  "mac": {
+    "icon": "tools.icns",
+    "target": {
+      "target": "default",
+      "arch": ["arm64", "x64"]
+    },
+    "category": "public.app-category.developer-tools",
+    "type": "distribution",
+    "entitlements": "assets/entitlements.mac.plist",
+    "entitlementsInherit": "assets/entitlements.mac.plist"
+  },
+  "linux": {
+    "icon": "tools.icns",
+    "description": "Many many useful Web Online Tools For Web Developers & Programmers.",
+    "category": "Development",
+    "target": ["deb", "rpm"],
+    "desktop": {
+      "Name": "Web Tools"
+    }
+  },
+  "win": {
+    "icon": "tools.ico",
+    "target": {
+      "target": "nsis",
+      "arch": ["x64", "ia32"]
+    }
+  }
+}

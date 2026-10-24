@@ -1,0 +1,39 @@
+{
+  "name": "@wcj/tools-react-html-to-markdown",
+  "version": "1.10.0",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "scripts": {
+    "build": "tsbb build src/*.tsx --use-babel --bail",
+    "watch": "tsbb watch src/*.tsx --use-babel --bail"
+  },
+  "keywords": [],
+  "files": [
+    "cjs",
+    "esm",
+    "src"
+  ],
+  "author": "Kenny Wong <wowohoo@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@codemirror/lang-html": "^6.0.0",
+    "@codemirror/lang-markdown": "^6.0.0",
+    "@wcj/tools-react-components": "1.10.0",
+    "rehype": "^12.0.1",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-format": "^4.0.1",
+    "rehype-ignore": "^1.0.1",
+    "rehype-prism-plus": "^1.4.0",
+    "rehype-raw": "^6.1.1",
+    "rehype-remark": "^9.1.2",
+    "rehype-slug": "^5.0.1",
+    "rehype-video": "^1.2.2",
+    "remark-gfm": "^3.0.1",
+    "remark-stringify": "^10.0.2",
+    "unified": "^10.1.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0"
+  }
+}

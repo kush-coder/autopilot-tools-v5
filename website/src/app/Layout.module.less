@@ -1,0 +1,66 @@
+.warpper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  > aside {
+    user-select: none;
+    width: 250px;
+    background-color: var(--color-canvas-subtle);
+    border-right: 1px solid var(--color-border-muted);
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // padding: 16px 8px 10px 8px;
+      height: 41px;
+    }
+    h1 a {
+      text-decoration: none;
+      color: var(--color-theme-text);
+    }
+    h1,
+    h1 a {
+      margin: 0;
+      font-size: 16px;
+      padding-left: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      padding: 0 8px 30px 8px;
+      gap: 5px;
+      border-top: 1px solid var(--color-border-muted);
+      padding-top: 10px;
+      max-height: calc(100vh - 41px);
+      overflow: auto;
+    }
+    nav a {
+      padding: 5px 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: currentColor;
+      transition: all 0.3s;
+      border-radius: 3px;
+      text-decoration: none;
+      justify-content: space-between;
+      &:hover,
+      &[aria-current='page'] {
+        background-color: var(--color-neutral-muted);
+        svg {
+          opacity: 0.7;
+        }
+      }
+      svg {
+        opacity: 0.2;
+      }
+    }
+  }
+  > article {
+    overflow: auto;
+    flex: 1;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@wcj/tools-react-components",
+  "version": "1.10.0",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "scripts": {
+    "build": "tsbb build src/*.tsx --use-babel --bail",
+    "watch": "tsbb watch src/*.tsx --use-babel --bail"
+  },
+  "keywords": [],
+  "files": [
+    "cjs",
+    "esm",
+    "src"
+  ],
+  "author": "Kenny Wong <wowohoo@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@uiw/copy-to-clipboard": "^1.0.12",
+    "@uiw/react-codemirror": "^4.8.1",
+    "@codemirror/view": "^6.36.7",
+    "react-i18next": "^12.0.0",
+    "styled-components": "6.1.19"
+  },
+  "peerDependencies": {
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0"
+  }
+}

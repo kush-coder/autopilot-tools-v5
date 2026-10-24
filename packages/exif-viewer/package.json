@@ -1,0 +1,28 @@
+{
+  "name": "@wcj/tools-react-exif-viewer",
+  "version": "1.10.0",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "scripts": {
+    "build": "tsbb build src/*.tsx --use-babel --bail",
+    "watch": "tsbb watch src/*.tsx --use-babel --bail"
+  },
+  "keywords": [],
+  "files": [
+    "cjs",
+    "esm",
+    "src"
+  ],
+  "author": "Kenny Wong <wowohoo@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@codemirror/lang-json": "^6.0.0",
+    "@codemirror/lang-markdown": "^6.0.0",
+    "@wcj/tools-react-components": "1.10.0",
+    "exifreader": "^4.5.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0"
+  }
+}
